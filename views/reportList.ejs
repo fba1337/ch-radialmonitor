@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report List</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Available Reports</h1>
+    <% if (rows.length === 0) { %>
+        <p>No reports available.</p>
+    <% } else { %>
+        <div class="report-list">
+            <% rows.forEach(function(row) { %>
+                <a href="/report/<%= row.id %>" class="report-item-link">
+                    <div class="report-item">
+                        Report ID: <%= row.id %>, Generated on: <%= formatEST(row.date) %>
+                        <div class="report-info">
+                        </div>
+                    </div>
+                </a>
+            <% }); %>
+        </div>
+    <% } %>
+</body>
+</html>
