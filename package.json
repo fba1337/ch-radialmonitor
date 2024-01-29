@@ -1,0 +1,11 @@
+{
+  "name": "ch-radialmonitor",
+  "version": "1.0.0",
+  "description": "reconcile orders between EOM and Radial ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felix Ballweg",
+  "license": "ISC"
+}
