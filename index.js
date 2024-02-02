@@ -175,7 +175,6 @@ app.get('/report', (req, res) => {
         res.render('reportList', { 
             rows: rows, 
             formatEST: formatEST, 
-            getExcludedCounts: getExcludedCounts // Pass the function for processing report data
         });
     });
 });
